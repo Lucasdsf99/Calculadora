@@ -26,9 +26,15 @@ while True:
 
     if len(operador) > 1:
         print('Digite apenas um operador')
+        system('pause') 
+        system('cls')
+        continue
 
     if operador not in operadores_permitidos:
         print('Operador Inválido.')
+        system('pause') 
+        system('cls') 
+        continue
 
     print('Realizando a sua conta. Confira o resultado abaixo:')    
     if operador == '+':
